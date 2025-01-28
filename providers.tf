@@ -10,5 +10,5 @@ provider "aws" {
   shared_config_files      = ["~/.aws/configuration"]
   shared_credentials_files = ["~/.aws/credentials"]
   profile                  = "Tuser"
-  region                   = "us-east-1"
+  region                   = "us-west-2"
 }

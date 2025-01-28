@@ -28,7 +28,7 @@ resource "aws_key_pair" "key_pair" {
 
 
 resource "aws_instance" "Cloud-Base" {
-  ami           = "ami-0ac4dfaf1c5c0cce9"  
+  ami           = "ami-0fa40e25bf4dda1f6"  
   instance_type = "t2.micro"  
   key_name      = aws_key_pair.key_pair.key_name  
 
