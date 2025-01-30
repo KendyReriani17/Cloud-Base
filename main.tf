@@ -38,8 +38,12 @@ resource "aws_instance" "Cloud-Base" {
 }
 
 
-resource "aws_s3_bucket" "cloud_base_bucket" {
-  bucket = "cloud-base-bucket"  
-  acl    = "private"                     
+resource "aws_s3_bucket" "kendy_cloud_base_bucket" {
+  bucket = "kendy-cloud-base-bucket"
+
+  tags = {
+    Name        = "cloud_base_bucket"
+    
+  }
 }
 
