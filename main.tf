@@ -38,4 +38,8 @@ resource "aws_instance" "Cloud-Base" {
 }
 
 
+resource "aws_s3_bucket" "cloud_base_bucket" {
+  bucket = "cloud-base-bucket"  
+  acl    = "private"                     
+}
 
